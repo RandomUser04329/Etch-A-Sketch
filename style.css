@@ -1,0 +1,74 @@
+  {
+    outline: 2px solid red;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    display:flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#EtchASketch {
+    background-color: rgb(196, 33, 33);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    width: 800px;
+    margin: 20px;
+    gap: 10px;
+}
+
+.sketchArea { 
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 600px;
+    background-color: rgb(182, 182, 182);
+}
+
+.box {
+    width: 10px;
+    height: 6.7px;
+}
+
+
+.controls {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 85px;
+    width: 700px;
+}
+
+#title {
+    color: white;
+    font-style: italic;
+}
+
+.left, .right, .up, .down {
+ background-color: white;
+ width: 75px;
+ height: 75px;
+ border-radius: 100px;
+ border: 0;
+ border-bottom: 6px solid rgb(198, 198, 198);
+ font-family :Arial, Helvetica, sans-serif;
+ cursor: pointer;
+}
+
+.left:hover, .right:hover, .up:hover, .down:hover {
+    background-color: rgb(204, 204, 204);
+    border-bottom: 5px solid rgb(150, 150, 150);
+}
+
+.left:active, .right:active, .up:active, .down:active {
+    border-bottom: 4px solid rgb(150, 150, 150);
+    transform: translateY(2px);
+}
+
